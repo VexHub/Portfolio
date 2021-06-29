@@ -1,0 +1,17 @@
+//import
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap');
+@import 'base.scss';
+
+//code
+#placehold_text {
+    margin-left: 200px;
+    
+    height: 100vh;
+    h1 {
+        font-size: 5rem;
+        color: $text-col;
+        text-align: center;
+        margin-top: calc(50vh - 48px);
+        margin-bottom: calc(50vh - 48px);
+    }
+}

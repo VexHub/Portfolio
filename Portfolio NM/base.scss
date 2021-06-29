@@ -1,0 +1,164 @@
+//import
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap');
+
+//variables
+$title-size: 24px;
+$prim-col: #7908D0;
+$sec-col: #110058;
+$dark-col: #090520;
+$light-col: #6C91BF;
+$text-col: #fff;
+//
+
+
+html * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background-color: $dark-col;
+}
+
+nav {
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    background-color: $dark-col;
+    border-right: $prim-col solid 5px;
+    display: none;
+    box-shadow: 5px 0 5px $dark-col;
+    &:hover {
+        display: inline-block;
+    }
+    @media(min-width: 992px) {
+        display: inline-block;
+    }
+}
+
+.initialdiv {
+    width: 100%;
+    height: calc(4rem + 10px + 20px);
+    // height: 155px; //to change
+    border-bottom: $prim-col 5px solid;
+    
+}
+
+.initial {
+    font-weight: 900;
+    font-size: 4rem;
+    color: $prim-col;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    // text-align: center; //to change
+    // padding-top: 40px; //to change
+    // padding-bottom: 40px; //to change
+    @media(min-width: 992px) {
+        text-align: center;
+    }
+
+}
+
+.linkdiv {
+    padding-top: 50px;
+}
+
+.navlink {
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    color: $text-col;
+    text-align: center;
+    margin-bottom: auto;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    &:nth-of-type(1) {
+        width: 70px;
+    }
+    &:nth-of-type(2) {
+        width: 90px;
+    }
+    &:nth-of-type(3) {
+        width: 125px;
+    }
+    &:nth-of-type(4) {
+        width: 93px;
+    }
+    &:nth-of-type(5) {
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: $prim-col 5px solid;
+        border-bottom: $prim-col 5px solid;
+    }
+    &:hover:nth-of-type(5) {
+        background-color: $prim-col;
+        color: $text-col;
+    }
+    h3 {
+        box-sizing: border-box;
+        font-size: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: inherit;
+        
+        &:hover::after {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+            display: block;
+            width: inherit;
+            padding-top: 5px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 5px solid $sec-col;
+        }
+        
+        
+    }
+    h4 {
+        box-sizing: border-box;
+        font-size: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: inherit;
+    }
+}
+
+.hamburg {
+    position: fixed;
+    z-index: 3;
+    top: 20px;
+    left: 20px;
+    button {
+        color: $text-col;
+        font-size: 2.5rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        background-color: $sec-col;
+        border: none;
+        border-radius: 3px;
+        &:hover {
+            background-color: $prim-col;
+        }
+    }
+    &:hover + nav {
+        display: inline-block;
+    }
+    @media(min-width: 992px) {
+        display: none;
+    }
+    
+}

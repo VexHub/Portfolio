@@ -1,0 +1,323 @@
+//import
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap');
+@import 'base.scss';
+
+header {
+    //width: calc(100% - 200px); //to change
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    // padding-left: calc(100% - (100% - 200px)); //to change
+    @media(min-width: 992px) {
+        width: calc(100% - 200px);
+        margin-left: 200px !important;
+    }
+}
+
+.imgdiv {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('daniele-levis-pelusi-nEczFlV-GMI-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.titlediv {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    // width: calc(100% - 200px); //to change
+    color: $text-col;
+    h1, h2{
+        text-align: center;
+        padding-left: 20px;
+        // padding-left: 0; //to change
+        padding-right: 20px;
+    }
+    h1 {
+        font-weight: 900;
+        font-size: 2.5rem;
+        @media (min-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        @media (min-width: 768px) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.scrolldiv {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    color: $text-col;
+    text-align: center;
+    text-decoration: none;
+    // padding-left: 0; //to change
+}
+
+
+
+.scrolldiv {
+    i {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+#project_cards {
+    // height: 880px; //to change
+    height: auto;
+    width: calc(100% - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 105px;
+    padding-bottom: 105px;
+    @media (min-width: 576px) {
+        justify-content: space-between;
+    }
+    @media(min-width: 992px) {
+        width: calc(100% - 230px);
+        margin-left: 200px;
+    }
+}
+
+.cardout {
+    width: 100%;
+    background-color: $prim-col;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    @media (min-width: 576px) {
+        width: calc(50% - 10px);
+    }
+    @media (min-width: 768px) {
+        width: calc(33.33% - 10px);
+    }
+}
+
+.cardout:hover {
+    transform: scale(1.05);
+    & .cardtop .cardimglink .cardimg{
+        // transform: scale(1.05);
+        filter: grayscale(0.5);
+        // border-radius: 3%;
+        box-shadow: 0px 0px 10px $sec-col;
+    }
+    & .cardbottom h3,
+    & .cardbottom a {
+        
+    }
+}
+
+.cardtop {
+    width: 100%;
+    height: auto;
+    // &:hover + .cardbottom h3,
+    // &:hover + .cardbottom a {
+    //     color: #7E7E7E;
+    // }
+    &:hover + .cardbottom .cardlink::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        display: block;
+        width: inherit;
+        padding-top: 5px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 5px solid $sec-col;
+    }
+}
+
+.cardimg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.cardbottom {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 992px) {
+        align-items:flex-start;
+    }
+}
+
+.projectname {
+    font-size: 2rem;
+    padding-bottom: 15px;
+    color: $text-col;
+    text-align: center;
+    @media (min-width: 992px) {
+        text-align: left;
+    }
+}
+
+.cardlink {
+    font-size: 1rem;
+    text-decoration: none;
+    color: $text-col;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    &:hover::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        display: block;
+        width: inherit;
+        padding-top: 5px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 5px solid $sec-col;
+    }
+    @media (min-width: 992px) {
+        text-align: left;
+    }
+}
+
+#contact_me {
+    display: block;
+    @media (min-width: 992px) {
+        display: flex;
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
+}
+
+.formtext * {
+    color: $text-col;
+    text-align: center;
+    padding-bottom: 15px;
+    @media (min-width: 992px) {
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+}
+
+.formh3 {
+    font-size: 2rem;
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+
+.formh4 {
+    font-size: 1.5rem;
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+.formp {
+    font-size: 1rem;
+    @media (min-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+.formcontent {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (min-width: 992px) {
+        width: 125%;
+    }
+}
+
+.text {
+    width: calc(100% - 10px);
+    height: 44px;
+    background-color: #c1c1c1;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    @media (min-width: 576px) {
+        &:nth-of-type(1),
+        &:nth-of-type(2) {
+            width: calc(50% - 12px);
+        }
+    }
+}
+
+.textarea {
+    width: calc(100% - 10px);
+    height: 180px;
+    background-color: #c1c1c1;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    resize: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.submit {
+    height: 45px;
+    background-color: transparent;
+    border: $prim-col 5px solid;
+    font-size: 2rem;
+    width: calc(100% - 10px);
+    color: $text-col;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    &:hover {
+        background-color: $prim-col;
+    }
+    @media (min-width: 992px) {
+        width: 180px;
+    }
+}
+
+.scrollup {
+    color: $text-col;
+    display: flex;
+    font-size: 4rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    i {
+        font-size: 4rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    @media (min-width: 992px) {
+        padding-left: 200px;
+    }
+}
