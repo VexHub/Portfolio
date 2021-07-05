@@ -7,6 +7,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
+html {
+  overflow-x: hidden;
+}
+
 html * {
   margin: 0;
   padding: 0;
@@ -174,6 +178,10 @@ nav:hover {
   .hamburg {
     display: none;
   }
+}
+
+html {
+  overflow-x: hidden;
 }
 
 html * {
@@ -382,6 +390,7 @@ header {
   z-index: 1;
   width: 100%;
   color: #fff;
+  top: calc(50% - 52.81px);
 }
 
 .titlediv h1, .titlediv h2 {
@@ -749,6 +758,10 @@ header {
   .scrollup {
     padding-left: 200px;
   }
+}
+
+html {
+  overflow-x: hidden;
 }
 
 html * {
@@ -1202,6 +1215,7 @@ nav:hover {
 
 #lat {
   width: 260px;
+  height: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1243,6 +1257,7 @@ nav:hover {
 
 .latarea {
   width: 260px;
+  height: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1365,6 +1380,10 @@ nav:hover {
   padding-right: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 html * {
@@ -1577,6 +1596,12 @@ nav:hover {
             flex-direction: column;
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 992px) and (-ms-high-contrast: none), (min-width: 992px) and (-ms-high-contrast: active) {
+  #scion_scheme {
+    margin-top: 100px;
   }
 }
 
@@ -1855,6 +1880,10 @@ nav:hover {
 .netmattersitem::marker {
   color: #7908D0;
   font-size: 1.4rem;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 html * {

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
+html {
+  overflow-x: hidden;
+}
+
 html * {
   margin: 0;
   padding: 0;
@@ -210,6 +214,12 @@ nav:hover {
             flex-direction: column;
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 992px) and (-ms-high-contrast: none), (min-width: 992px) and (-ms-high-contrast: active) {
+  #scion_scheme {
+    margin-top: 100px;
   }
 }
 

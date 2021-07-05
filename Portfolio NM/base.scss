@@ -10,6 +10,9 @@ $light-col: #6C91BF;
 $text-col: #fff;
 //
 
+html {
+    overflow-x: hidden;
+}
 
 html * {
     margin: 0;

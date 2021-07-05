@@ -27,6 +27,9 @@
         flex-direction: column;
         margin-top: 0;
         margin-bottom: 0;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            margin-top: 100px;
+        }
     }
     @media (min-width: 1260px) {
         width: calc(60% - 120px);

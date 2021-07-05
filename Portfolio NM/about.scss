@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap');
 @import 'base.scss';
 
+
+
 #about_head {
     width: 270px;
     height: calc(100vh);
@@ -214,6 +216,7 @@
 
 #lat {
     width: 260px;
+    height: 100%;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -237,6 +240,7 @@
     width: 260px;
     // padding-left: 10px;
     // padding-right: 10px;
+    height: 100%;
     height: fit-content;
     // margin-left: auto;
     // margin-right: auto;

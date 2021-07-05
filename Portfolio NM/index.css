@@ -206,6 +206,7 @@ header {
   z-index: 1;
   width: 100%;
   color: #fff;
+  top: calc(50% - 52.81px);
 }
 
 .titlediv h1, .titlediv h2 {
