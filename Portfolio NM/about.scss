@@ -273,6 +273,7 @@
     width: 100%;
     background-color: $prim-col;
     height: fit-content;
+    overflow: hidden;
     // display: flex;
     // content: center;
     // padding-left: 10px;
@@ -314,6 +315,7 @@
     opacity: 0.8;
     &:hover {
         opacity: 1;
+        animation: proj_out 0.5s ease-out;
         transform: scale(1.05);
     }
     @media (min-width: 576px) {

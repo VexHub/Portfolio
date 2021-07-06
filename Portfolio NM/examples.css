@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
+html {
+  overflow-x: hidden;
+}
+
 html * {
   margin: 0;
   padding: 0;
@@ -123,7 +127,7 @@ nav:hover {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 5px solid #110058;
+  border-bottom: 5px solid #fff;
 }
 
 .navlink h4 {

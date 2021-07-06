@@ -10,6 +10,16 @@ $light-col: #6C91BF;
 $text-col: #fff;
 //
 
+//animations
+@keyframes proj_out {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
 html {
     overflow-x: hidden;
 }
@@ -105,7 +115,7 @@ nav {
         color: $text-col;
     }
     h3 {
-        box-sizing: border-box;
+        // box-sizing: border-box;
         font-size: 1rem;
         display: block;
         margin-left: auto;
@@ -123,7 +133,7 @@ nav {
             right: 0;
             margin-left: auto;
             margin-right: auto;
-            border-bottom: 5px solid $sec-col;
+            border-bottom: 5px solid $text-col;
         }
         
         
@@ -136,6 +146,10 @@ nav {
         margin-right: auto;
         width: inherit;
     }
+}
+
+.initiala {
+    text-decoration: none;
 }
 
 .hamburg {

@@ -127,7 +127,7 @@ nav:hover {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 5px solid #110058;
+  border-bottom: 5px solid #fff;
 }
 
 .navlink h4 {
@@ -401,7 +401,7 @@ nav:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {

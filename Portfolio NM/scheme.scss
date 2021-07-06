@@ -180,7 +180,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     @media (min-width: 768px) {
         width: calc(100% - 40px);
         margin-left: 3vw;

@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
+@-webkit-keyframes proj_out {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@keyframes proj_out {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
 html {
   overflow-x: hidden;
 }
@@ -127,7 +148,7 @@ nav:hover {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 5px solid #110058;
+  border-bottom: 5px solid #fff;
 }
 
 .navlink h4 {
@@ -541,6 +562,7 @@ nav:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  overflow: hidden;
   margin-bottom: 20px;
   border-radius: 0 0 5px 5px;
 }
@@ -578,6 +600,8 @@ nav:hover {
 
 .exampleimg:hover {
   opacity: 1;
+  -webkit-animation: proj_out 0.5s ease-out;
+          animation: proj_out 0.5s ease-out;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }

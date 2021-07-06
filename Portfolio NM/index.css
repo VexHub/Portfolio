@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
+@-webkit-keyframes proj_out {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@keyframes proj_out {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
 html * {
   margin: 0;
   padding: 0;
@@ -123,7 +148,7 @@ nav:hover {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 5px solid #110058;
+  border-bottom: 5px solid #fff;
 }
 
 .navlink h4 {
@@ -257,9 +282,9 @@ header {
 
 #project_cards {
   height: auto;
-  width: calc(100% - 30px);
-  padding-left: 15px;
-  padding-right: 15px;
+  width: calc(100% - 50px);
+  padding-left: 25px;
+  padding-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +293,7 @@ header {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 105px;
+  padding-top: 55px;
   padding-bottom: 105px;
 }
 
@@ -282,7 +307,7 @@ header {
 
 @media (min-width: 992px) {
   #project_cards {
-    width: calc(100% - 230px);
+    width: calc(100% - 260px);
     margin-left: 200px;
   }
 }
@@ -296,17 +321,19 @@ header {
 
 @media (min-width: 576px) {
   .cardout {
-    width: calc(50% - 10px);
+    width: calc(50% - 20px);
   }
 }
 
 @media (min-width: 768px) {
   .cardout {
-    width: calc(33.33% - 10px);
+    width: calc(33.33% - 20px);
   }
 }
 
 .cardout:hover {
+  -webkit-animation: proj_out 0.5s ease-out;
+          animation: proj_out 0.5s ease-out;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -347,10 +374,12 @@ header {
 }
 
 .cardbottom {
-  width: 100%;
+  width: calc(100% - 40px);
   height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +404,7 @@ header {
 }
 
 .projectname {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-bottom: 15px;
   color: #fff;
   text-align: center;
@@ -492,7 +521,7 @@ header {
 }
 
 .text {
-  width: calc(100% - 10px);
+  width: calc(100% - 30px);
   height: 44px;
   background-color: #c1c1c1;
   border: 0px;
@@ -500,16 +529,18 @@ header {
   margin-bottom: 15px;
   margin-left: 5px;
   margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (min-width: 576px) {
   .text:nth-of-type(1), .text:nth-of-type(2) {
-    width: calc(50% - 12px);
+    width: calc(50% - 32px);
   }
 }
 
 .textarea {
-  width: calc(100% - 10px);
+  width: calc(100% - 30px);
   height: 180px;
   background-color: #c1c1c1;
   border: 0px;
@@ -517,6 +548,8 @@ header {
   margin-bottom: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   resize: none;
   margin-left: 5px;
   margin-right: 5px;
