@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap");
+@-webkit-keyframes proj_out {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@keyframes proj_out {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
 html {
   overflow-x: hidden;
 }
@@ -106,8 +127,6 @@ nav:hover {
 }
 
 .navlink h3 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-size: 1rem;
   display: block;
   margin-left: auto;
@@ -138,6 +157,10 @@ nav:hover {
   margin-left: auto;
   margin-right: auto;
   width: inherit;
+}
+
+.initiala {
+  text-decoration: none;
 }
 
 .hamburg {
@@ -173,16 +196,177 @@ nav:hover {
   }
 }
 
-#placehold_text {
-  margin-left: 200px;
-  height: 100vh;
+#examplesMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 140px);
+  margin-top: 100px;
 }
 
-#placehold_text h1 {
-  font-size: 5rem;
+@media (min-width: 992px) {
+  #examplesMain {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  #examplesMain {
+    height: calc(100vh - 60px);
+  }
+}
+
+#codeCards {
+  height: 100%;
+  width: 50%;
+}
+
+.homepage {
   color: #fff;
-  text-align: center;
-  margin-top: calc(50vh - 48px);
-  margin-bottom: calc(50vh - 48px);
+  margin-left: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #1E1E1E;
+  border-radius: 25px 0 0 25px;
+  padding: 10px;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.homepage * {
+  font-size: 1rem;
+  cursor: default;
+}
+
+@media (min-width: 992px) {
+  .homepage * {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .homepage {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .homepage {
+    margin-left: 250px;
+  }
+}
+
+.homepage p:hover {
+  background-color: black;
+}
+
+.codeTitle {
+  margin-bottom: 10px;
+  border-bottom: 2px #fff solid;
+  padding-top: 20px;
+}
+
+.purple {
+  color: #C586C0;
+}
+
+.light_yellow {
+  color: #DCDCAA;
+}
+
+.blue {
+  color: #4FC1FF;
+}
+
+.orange {
+  color: #CE9178;
+}
+
+.comment {
+  color: #4EC9B0;
+}
+
+.green {
+  color: #B5CEA8;
+}
+
+.yellow {
+  color: #D7BA7D;
+}
+
+.newBlock {
+  margin-bottom: 1.25rem;
+}
+
+.indent_one {
+  margin-left: calc(1.25rem * 2);
+}
+
+.indent_two {
+  margin-left: calc(1.25rem * 4);
+}
+
+#comments {
+  height: 100%;
+  width: 50%;
+}
+
+.commentsArea {
+  height: 100%;
+  overflow-y: scroll;
+  background-color: #7908D0;
+  width: calc(100% - 35px);
+  padding: 10px;
+  border-radius: 0 25px 25px 0;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+@media (min-width: 576px) {
+  .commentsArea {
+    width: calc(100% - 50px);
+    height: auto;
+    overflow-y: visible;
+  }
+}
+
+.commentsArea * {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 576px) {
+  .commentsArea * {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .commentsArea * {
+    font-size: 1.2rem;
+  }
+}
+
+.explaination {
+  padding-bottom: 10px;
+}
+
+.commentTitle {
+  padding-top: 10px;
+}
+
+.commentP {
+  padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: inline-block;
+}
+
+.shownOveride {
+  display: inline-block;
 }
 /*# sourceMappingURL=examples.css.map */

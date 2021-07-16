@@ -37,8 +37,182 @@
         
     </nav>
 
-    <section id="placehold_text">
-        <h1>Coming Soon</h1>
-    </section>
+    <main id="examplesMain">
+        <section id="codeCards">
+
+            <div class="homepage">
+                <h2 class="codeTitle">Netmatters Homepage</h1>
+                <p id="line_one" class="newBlock">
+                    <span class="purple">@mixin </span>
+                    <span class="light_yellow">bannerButton</span>
+                    (
+                    <span class="blue">$color-base</span>
+                    , 
+                    <span class="blue">$color-hover</span>
+                    ) {
+                </p>
+                <p id="line_two" class="indent_one baseL">
+                    <span class="blue">justify-content</span>
+                    : 
+                    <span class="orange">center</span>
+                    ;
+                </p>
+                <p id="line_three" class="indent_one baseL">
+                    <span class="blue">align-items</span>
+                    : 
+                    <span class="orange">center</span>
+                    ;
+                </p>
+                <p id="line_four" class="indent_one baseL">
+                    <span class="blue">height</span>
+                    : 
+                    <span class="green">44.4px</span>
+                    ;
+                </p>
+                <p id="line_five" class="indent_one baseL">
+                    <span class="blue">padding</span>
+                    : 
+                    <span class="green">5.8px 15.675px</span>
+                    ;
+                </p>
+                <p id="line_six" class="retMixinL indent_one baseL">
+                    <span class="blue">background-color</span>
+                    : 
+                    <span class="blue">$color-base</span>
+                    ;
+                </p>
+                <p id="line_seven" class="indent_one baseL">
+                    <span class="blue">border-radius</span>
+                    : 
+                    <span class="green">3px</span>
+                    ;
+                </p>
+                <p id="line_eight" class="callVarL indent_one baseL">
+                    <span class="blue">color</span>
+                    : 
+                    <span class="blue">$white</span>
+                    ;
+                    <span class="comment"> //--> var, colors.scss</span>
+                </p>
+                <p id="line_nine" class="indent_one baseL">
+                    <span class="blue">font-size</span>
+                    : 
+                    <span class="green">1.125rem</span>
+                    ;
+                </p>
+                <p id="line_ten" class="indent_one baseL">
+                    <span class="blue">line-height</span>
+                    : 
+                    <span class="green">46px</span>
+                    ;
+                </p>
+                <p id="line_eleven" class="indent_one baseL">
+                    <span class="blue">cursor</span>
+                    : 
+                    <span class="orange">pointer</span>
+                    ;
+                </p>
+                <p id="line_twelve" class="indent_one iconL">
+                    <span class="comment">// - Icon properties -</span>
+                </p>
+                <p id="line_thirteen-fourteen" class="indent_one iconL">
+                    <span class="yellow">.fas</span>
+                    ,
+                    <span class="yellow">.far</span>
+                     {
+                </p>
+                <p id="line_fifteen" class="indent_two iconL">
+                    <span class="blue">padding-left</span>
+                    : 
+                    <span class="green">3px</span>
+                    ;
+                </p>
+                <p id="line_sixteen" class="indent_two iconL">
+                    <span class="blue">padding-right</span>
+                    : 
+                    <span class="green">3px</span>
+                    ;
+                </p>
+                <p id="line_seventeen" class="indent_two iconL">
+                    <span class="blue">font-size</span>
+                    : 
+                    <span class="green">1.438rem</span>
+                    ;
+                </p>
+                <p id="line_eighteen" class="endBlock indent_one iconL">
+                    }
+                </p>
+                <p id="line_nineteen" class="indent_one iconL">
+                    <span class="comment">//-/</span>
+                </p>
+                <p id="line_twenty" class="indent_one  pseudoL">
+                    <span class="comment">// - Pseudos -</span>
+                </p>
+                <p id="line_twentyOne" class="newBlock indent_one pseudoL">
+                    <span class="blue">&</span>
+                    <span class="orange">:hover</span>
+                     {
+                </p>
+                <p id="line_twentyTwo" class="indent_two retMixinL pseudoL">
+                    <span class="blue">background-color</span>
+                    : 
+                    <span class="blue">$color-hover</span>
+                    ;
+                </p>
+                <p id="line_twentyThree" class="endBlock indent_one pseudoL">
+                    }
+                </p>
+                <p id="line_twentyFour" class="indent_one pseudoL">
+                    <span class="comment">//-/</span>
+                </p>
+                <p id="line_twentyFive" class="endBlock">
+                }
+                </p>
+            </div>
+        
+        </section>
+
+        <section id="comments">
+
+            <div class="commentsArea">
+                <h2 class="explaination shown">
+                    A simple example of using the tools available in the language used (SCSS) to reduce repeating.
+                </h2>
+                
+                <h3 class="commentTitle baseC">Base styles</h3>
+                <p class="commentP baseC">
+                    This section deals with the base styling of the mixin target.
+                </p>
+                <h3 class="commentTitle iconC">Icons</h3>
+                <p class="commentP iconC">
+                    This section styles the FontAwesome icons within these buttons.
+                </p>
+                <h3 class="commentTitle pseudoC">Pseudos</h3>
+                <p class="commentP  pseudoC">
+                    This section deals with the pseudo-elements of the mixin target, specifically adding the
+                    hover change.
+                </p>
+                <h3 class="commentTitle mixinC">@mixin calling</h3>
+                <p class="commentP mixinC">             
+                    A mixin for the support and contact buttons on the banner of the homepage.
+                    It parses a base color and a hover color in and then styles the content appropriately.
+                </p>
+                <h3 class="commentTitle retMixinC">Parse</h3>
+                <p class="commentP retMixinC">
+                    This line takes the parsed variable and changes the background color.
+                </p>
+                <h3 class="commentTitle callVarC">Calling from imported file</h3>
+                <p class="commentP callVarC">
+                    This line calls a variable from a separate SCSS file that stores the color scheme information
+                     (in case design changes happen).
+                </p>
+
+            </div>
+
+
+        </section>
+    </main>  
+
+    <script src="js/example.js"></script>
 </body>
 </html>

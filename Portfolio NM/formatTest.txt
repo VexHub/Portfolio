@@ -1,0 +1,192 @@
+//BASE -----
+
+//--|| Mixins ||---------------------
+
+@mixin bannerButton($color-base, $color-hover) {
+
+    justify-content: center;
+    align-items: center;
+    height: 44.4px;
+    padding: 5.8px 15.675px;
+    background-color: $color-base;
+    border-radius: 3px;
+    color: $white; //--> var, color.scss
+    font-size: 1.125rem;
+    line-height: 46px;
+    cursor: pointer; 
+    //- Icon properties -
+    .fas,
+    .far {
+
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 1.438rem;
+
+    }
+    //-/
+    //- Pseudos -
+    &:hover {
+        background-color: $color-hover;
+    }
+    //-/
+
+}
+
+//-----------------------------------
+
+
+//--END OF BASE
+
+
+//HTML --
+<p id="line_one" class="newBlock">
+    <span class="purple">@mixin </span>
+    <span class="light_yellow">bannerButton</span>
+    (
+    <span class="blue">$color-base</span>
+    , 
+    <span class="blue">$color-hover</span>
+    ) {
+</p>
+<p id="line_two">
+    <span class="blue">justify-content</span>
+    : 
+    <span class="orange">center</span>
+    ;
+</p>
+<p id="line_three">
+    <span class="blue">align-items</span>
+    : 
+    <span class="orange">center</span>
+    ;
+</p>
+<p id="line_four">
+    <span class="blue">height</span>
+    : 
+    <span class="green">44.4px</span>
+    ;
+</p>
+<p id="line_five">
+    <span class="blue">padding</span>
+    : 
+    <span class="green">5.8px 15.675px</span>
+    ;
+</p>
+<p id="line_six" class="retMixin">
+    <span class="blue">background-color</span>
+    : 
+    <span class="blue">$color-base</span>
+    ;
+</p>
+<p id="line_seven">
+    <span class="blue">border-radius</span>
+    : 
+    <span class="green">3px</span>
+    ;
+</p>
+<p id="line_eight" class="callVar">
+    <span class="blue">color</span>
+    : 
+    <span class="blue">$white</span>
+    ;
+    <span class="comment"> //--> var, colors.scss</span>
+</p>
+<p id="line_nine">
+    <span class="blue">font-size</span>
+    : 
+    <span class="green">1.125rem</span>
+    ;
+</p>
+<p id="line_ten">
+    <span class="blue">line-height</span>
+    : 
+    <span class="green">46px</span>
+    ;
+</p>
+<p id="line_eleven">
+    <span class="blue">cursor</span>
+    : 
+    <span class="orange">pointer</span>
+    ;
+</p>
+<p id="line_twelve">
+    <span class="comment">// - Icon properties -</span>
+</p>
+<p id="line_thirteen-fourteen" class="newBlock">
+    <span class="yellow">.fas</span>
+    ,
+    <span class="yellow">.far</span>
+     {
+</p>
+<p id="line_fifteen">
+    <span class="blue">padding-left</span>
+    : 
+    <span class="green">3px</span>
+    ;
+</p>
+<p id="line_sixteen">
+    <span class="blue">padding-right</span>
+    : 
+    <span class="green">3px</span>
+    ;
+</p>
+<p id="line_seventeen">
+    <span class="blue">font-size</span>
+    : 
+    <span class="green">1.438rem</span>
+    ;
+</p>
+<p id="line_eighteen" class="endBlock">
+    }
+</p>
+<p id="line_nineteen">
+    <span class="comment">//-/</span>
+</p>
+<p id="line_twenty">
+    <span class="comment">// - Pseudos -</span>
+</p>
+<p id="line_twentyOne" class="newBlock">
+    <span class="blue">&</span>
+    <span class="orange">:hover</span>
+     {
+</p>
+<p id="line_twentyTwo">
+    <span class="blue">background-color</span>
+    : 
+    <span class="blue">$color-hover</span>
+    ;
+</p>
+<p id="line_twentyThree" class="endBlock">
+    }
+</p>
+<p id="line_twentyFour">
+    <span class="comment">//-/</span>
+</p>
+
+
+
+A simple example of using the tools available in the languages used (SCSS) to reduce repeating.
+
+HOVERS
+
+||@mixin line||
+A mixin for the support and contact buttons on the banner of the homepage.
+It parses a base color and a hover color in and then styles the content appropriately.
+
+||.retMixin||
+This line takes the parsed variable and changes the background color.
+
+||.callVar||
+This line calls a variable from a separate SCSS file that stores the color scheme information (in case design changes happen).
+
+||#line_two, #line_three, #line_four, #line_five, #line_six, #line_seven, #line_eight, #line_nine, #line_ten, #line_eleven||
+This section deals with the base styling of the mixin target.
+
+
+||#line_twelve, #line_thirteen-fourteen, #line_fifteen, #line_sixteen, #line_seventeen, #line_eighteen||
+This section styles the FontAwesome icons within these buttons.
+
+||#line_twenty, #line-twentyOne, #line-twentyTwo, #line-twentyThree, #line-twentyFour||
+This section deals with the pseudo-elements of the mixin target, specifically adding the
+hover change.
+
