@@ -221,6 +221,12 @@ nav:hover {
   width: 50%;
 }
 
+@media (min-width: 768px) {
+  #codeCards {
+    width: 60%;
+  }
+}
+
 .homepage {
   color: #fff;
   margin-left: 20px;
@@ -298,6 +304,10 @@ nav:hover {
   margin-bottom: 1.25rem;
 }
 
+.endBlock {
+  margin-top: 1.25rem;
+}
+
 .indent_one {
   margin-left: calc(1.25rem * 2);
 }
@@ -309,6 +319,12 @@ nav:hover {
 #comments {
   height: 100%;
   width: 50%;
+}
+
+@media (min-width: 768px) {
+  #comments {
+    width: 40%;
+  }
 }
 
 .commentsArea {

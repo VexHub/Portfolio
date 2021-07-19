@@ -252,6 +252,12 @@ nav:hover {
   }
 }
 
+@media (min-width: 1800px) {
+  #scion_scheme {
+    margin-left: calc(25% - 200px);
+  }
+}
+
 .scionarea {
   width: 100%;
   height: -webkit-fit-content;
@@ -260,6 +266,7 @@ nav:hover {
   padding-left: 10px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1000px;
 }
 
 @media (min-width: 768px) {
@@ -328,6 +335,7 @@ nav:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
+  max-width: 1000px;
 }
 
 @media (min-width: 768px) {
@@ -364,6 +372,12 @@ nav:hover {
   }
 }
 
+@media (min-width: 1800px) {
+  #treehouse {
+    margin-right: calc(25% - 400px);
+  }
+}
+
 .treehousearea {
   width: 100%;
   height: -webkit-fit-content;
@@ -372,6 +386,7 @@ nav:hover {
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1000px;
 }
 
 @media (min-width: 768px) {
@@ -460,6 +475,12 @@ nav:hover {
 @media (min-width: 1260px) {
   #netmatters {
     width: calc(100% - 220px);
+  }
+}
+
+@media (min-width: 1800px) {
+  #netmatters {
+    margin-left: calc(25% - 200px);
   }
 }
 

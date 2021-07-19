@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap');
 @import 'base.scss';
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 #about_head {
     width: 270px;
@@ -16,6 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     @media (min-width: 576px) {
         width: 566px;
         flex-direction: row;

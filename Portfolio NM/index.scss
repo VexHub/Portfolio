@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:wght@100;400;700;900&display=swap');
 @import 'base.scss';
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 header {
     //width: calc(100% - 200px); //to change
@@ -74,6 +76,7 @@ header {
     color: $text-col;
     text-align: center;
     text-decoration: none;
+    scroll-behavior: smooth;
     // padding-left: 0; //to change
 }
 
@@ -406,6 +409,7 @@ header {
     margin-top: 50px;
     margin-bottom: 25px;
     text-decoration: none;
+    scroll-behavior: smooth;
     i {
         font-size: 4rem;
     }
